@@ -1,0 +1,214 @@
+/*----палитра----*/
+:root {
+  --background-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
+  --text-color: #757575;
+  --hero-title: #ffffff;
+  --section-title-color: #212121;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --hover-color: #188ce8;
+}
+/* ----общие стили----*/
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.button {
+  cursor: pointer;
+}
+/* ----лого----*/
+.logo {
+  color: #000000;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo .web {
+  color: var(--accent-color);
+}
+/* ----хедер меню----*/
+.site-nav .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.link.current {
+  color: var(--accent-color);
+}
+/* ----хедер контакты----*/
+.auth-nav .contact {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.auth-nav .contact:hover,
+.auth-nav .contact:focus {
+  color: var(--accent-color);
+}
+/* ----герой секшн----*/
+.hero.section-title {
+  color: var(--hero-title);
+  background-color: var(--title-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+/* ----секшнс общие----*/
+.section-title {
+  color: var(--section-title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.title {
+  color: var(--title-text-color);
+}
+/* ----секшнс особенности----*/
+.feature .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.feature.description {
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+}
+/*----команда---*/
+.team .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team.description {
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* ----футер----*/
+.footer {
+  background-color: var(--title-text-color);
+}
+.footer .logo .studio {
+  color: var(--background-color);
+}
+.footer-address,
+.address {
+  color: var(--background-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+}
+.address:hover,
+.address:focus {
+  color: var(--accent-color);
+}
+.footer-address .contact {
+  color: rgba(255, 255, 255, 0.6);
+}
+/* ----кнопки----*/
+.button {
+  color: var(--title-text-color);
+  background-color: var(--secondary-background-color);
+  text-align: center;
+}
+.button.primary {
+  color: var(--background-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+}
+.button.primary:hover,
+.button.primary:focus {
+  color: var(--background-color);
+  background-color: var(--hover-color);
+}
+.button.filter {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  /* identical to box height, or 162% */
+  letter-spacing: 0.03em;
+}
+.button.filter:hover,
+.button.filter:focus {
+  color: var(--background-color);
+  background-color: var(--hover-color);
+}
+/*----кнопки фильтра*/
+.button.filter.current {
+  color: var(--background-color);
+  background-color: var(--accent-color);
+}
+/* ----параграф в ссылке----*/
+.description {
+  color: var(--text-color);
+}
+/* ----подпись карточек портфолио----*/
+.portfolio .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+}
+.portfolio .description {
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+  letter-spacing: 0.03em;
+}
