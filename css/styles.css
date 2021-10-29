@@ -28,6 +28,7 @@ body {
 .link {
   text-decoration: none;
   margin: 0;
+  display: block;
 }
 .visually-hidden {
   position: absolute;
@@ -41,6 +42,9 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
+img {
+  display: block;
+}
 .cursor {
   cursor: pointer;
 }
@@ -50,6 +54,8 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -70,14 +76,28 @@ body {
 /* ----хедер меню----*/
 .page-header {
   background-color: var(--background-color);
+  align-items: center;
+  border-bottom: 1px solid var(--border-color-header);
+  /*padding-top: 24px;
+  padding-bottom: 24px;*/
 }
-
+.page-header .container {
+  display: flex;
+  align-items: center;
+}
+.page-header .logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .site-nav .link {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -93,6 +113,8 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .auth-nav .contact:hover,
 .auth-nav .contact:focus {
@@ -105,20 +127,17 @@ body {
 .site-nav .menu {
   display: block;
   margin-right: 50px;
-  /* padding-top: 32px;
-  padding-bottom: 32px;*/
 }
 .site-nav .menu:last-child {
   margin-right: 0;
 }
-.auth-nav {
+.page-header .auth-nav {
   display: flex;
+  margin-left: auto;
 }
 .auth-nav .auth {
   display: block;
   margin-right: 50px;
-  /*padding-top: 32px;
-  padding-bottom: 32px;*/
 }
 .auth-nav .auth:last-child {
   margin-right: 0;
@@ -126,11 +145,6 @@ body {
 .nav {
   display: flex;
   align-items: center;
-}
-.page-header {
-  display: flex;
-  align-content: center;
-  border-bottom: 1px solid var(--border-color-header);
 }
 
 /* ----герой секшн----*/
@@ -195,7 +209,7 @@ body {
   letter-spacing: 0.03em;
 }
 /*----working----*/
-.working .container {
+.working.section {
   padding-top: 0;
 }
 .list.working {
@@ -284,6 +298,9 @@ body {
 }
 .footer .address {
   margin-bottom: 9px;
+}
+.footer-address .contact {
+  padding: 0;
 }
 .footer .mail {
   margin-bottom: 9px;
@@ -379,7 +396,12 @@ body {
   padding: 20px 24px;
   box-sizing: border-box;
 }*/
-
+.portfolio-card {
+  border-bottom: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  padding: 20px 24px;
+}
 .portfolio .title {
   margin-top: 0;
   margin-bottom: 4px;
